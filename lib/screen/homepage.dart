@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
               "assets/background/background.png",
               height: double.infinity,
               width: double.infinity,
-              fit: BoxFit.fill,
+              fit: BoxFit.cover,
             ),
             Scaffold(
               backgroundColor: Colors.transparent,
@@ -80,9 +80,7 @@ class _HomeState extends State<Home> {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
-                  color: Color(0xff25D366)
-                  ),
+                    decoration: BoxDecoration(color: Color(0xff25D366)),
                     child: Text(
                       '</> & Crafted with 💛 Vikramaditya',
                       style: TextStyle(color: Colors.white, fontSize: 15),

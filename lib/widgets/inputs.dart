@@ -29,7 +29,7 @@ class Input extends StatelessWidget {
                 ),
               )),
           filled: true,
-          fillColor: Colors.black,
+          fillColor: Colors.black54,
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(
                 15.r,
@@ -59,7 +59,8 @@ class Input extends StatelessWidget {
         validator: (value) {
           if (value == null || value.isEmpty) {
             return 'Please enter a WhatsApp number.';
-          } else if (value.length != 10 || !RegExp(r'^[0-9]+$').hasMatch(value)) {
+          } else if (value.length != 10 ||
+              !RegExp(r'^[0-9]+$').hasMatch(value)) {
             return 'Please enter a valid 10-digit number.';
           }
           return null;

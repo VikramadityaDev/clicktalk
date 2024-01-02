@@ -4,7 +4,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'screen/homepage.dart';
 
 void main() {
-  runApp(const MyApp(),);
+  runApp(
+    const MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -32,7 +34,10 @@ class MyApp extends StatelessWidget {
           ),
           filledButtonTheme: FilledButtonThemeData(
             style: OutlinedButton.styleFrom(
-                minimumSize: Size(250.w, 50.h,),
+                minimumSize: Size(
+                  250.w,
+                  50.h,
+                ),
                 backgroundColor: const Color(
                   0xff25D366,
                 ),
@@ -44,8 +49,7 @@ class MyApp extends StatelessWidget {
                 textStyle: TextStyle(
                   fontSize: 20.sp,
                   fontWeight: FontWeight.bold,
-                )
-            ),
+                )),
           ),
         ),
         home: const Home(),
