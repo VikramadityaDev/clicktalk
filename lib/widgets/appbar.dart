@@ -9,20 +9,14 @@ class AppbarDesign extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.only(
-          bottom: 150.h,
-        top: 10.h
-      ),
+      padding: EdgeInsetsDirectional.only(bottom: 150.h, top: 10.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             "WhatsApp Direct Message",
             style: TextStyle(
-                fontSize: 22.sp,
-                fontWeight: FontWeight.w500,
-                color: Colors.white
-            ),
+                fontSize: 25, fontWeight: FontWeight.w500, color: Colors.white),
           ),
           // SizedBox(
           //   width: 10.w,
